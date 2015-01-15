@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 # Cwiid is a library that enables your application to communicate with
-# a wiimote using a bluetooth connection. To configure the buttons you 
+# a wiimote using a bluetooth connection. To configure the buttons you
 # need to configure the '/etc/cwiid/wminput/buttons' file. I wrote this
 # script so I could create multiple config files for various programs
 # and link them to the 'button' file example 'ln -s emu buttons' etc
@@ -23,7 +23,7 @@ my %prog	= (
 
 my %swit	= (
 
-	set			=>	'--set',
+	set		=>	'--set',
 	link		=>	'--link',
 	help		=>	'--help',
 	remove		=>	'--remove',
@@ -33,7 +33,7 @@ my %swit	= (
 
 
 my %desc	= (
-	set			=>	'sets the link to <program name>',
+	set		=>	'sets the link to <program name>',
 	link		=>	'shows what buttons is linked to',
 	help		=>	'displays this help :)',
 	remove		=>	'removes the current link',
@@ -44,7 +44,7 @@ my %desc	= (
 
 
 sub get_link {
-	
+
 	if (if_exists()) {
 
 		print "buttons -> $link\n";
